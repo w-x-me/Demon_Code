@@ -1,0 +1,13 @@
+﻿生成启动时间为 2018/8/16 10:37:49。
+     1>项目“D:\work\C++\int_float\int_float\int_float\int_float.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         E:\soft\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt int_float.cpp
+         int_float.cpp
+     1>d:\work\c++\int_float\int_float\int_float\int_float.cpp(6): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\work\c++\int_float\int_float\int_float\int_float.cpp(9): error C2065: “ddd”: 未声明的标识符
+     1>d:\work\c++\int_float\int_float\int_float\int_float.cpp(9): error C2146: 语法错误: 缺少“;”(在标识符“cout”的前面)
+     1>已完成生成项目“D:\work\C++\int_float\int_float\int_float\int_float.vcxproj”(Rebuild 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.49

@@ -1,0 +1,19 @@
+﻿生成启动时间为 2018/8/7 10:08:27。
+     1>项目“D:\work\C++\Binocular_Deal\Binocular_Deal\Binocular_Deal.vcxproj”在节点 2 上(Build 个目标)。
+     1>Link:
+         E:\soft\VS2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\work\C++\Binocular_Deal\Debug\Binocular_Deal.exe" /INCREMENTAL /NOLOGO halconcpp.lib halconcpp.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\work\C++\Binocular_Deal\Debug\Binocular_Deal.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\work\C++\Binocular_Deal\Debug\Binocular_Deal.lib" /MACHINE:X86 Debug\binocular_deal.obj
+     1>binocular_deal.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall HalconCpp::HTuple::HTuple(void)" (__imp_??0HTuple@HalconCpp@@QAE@XZ)，该符号在函数 "int __cdecl LeftImage_Deal(void)" (?LeftImage_Deal@@YAHXZ) 中被引用
+     1>binocular_deal.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall HalconCpp::HTuple::HTuple(int)" (__imp_??0HTuple@HalconCpp@@QAE@H@Z)，该符号在函数 "int __cdecl LeftImage_Deal(void)" (?LeftImage_Deal@@YAHXZ) 中被引用
+     1>binocular_deal.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall HalconCpp::HTuple::HTuple(char const *)" (__imp_??0HTuple@HalconCpp@@QAE@PBD@Z)，该符号在函数 "int __cdecl LeftImage_Deal(void)" (?LeftImage_Deal@@YAHXZ) 中被引用
+     1>binocular_deal.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: virtual __thiscall HalconCpp::HTuple::~HTuple(void)" (__imp_??1HTuple@HalconCpp@@UAE@XZ)，该符号在函数 "int __cdecl LeftImage_Deal(void)" (?LeftImage_Deal@@YAHXZ) 中被引用
+     1>binocular_deal.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall HalconCpp::HObject::HObject(void)" (__imp_??0HObject@HalconCpp@@QAE@XZ)，该符号在函数 "int __cdecl LeftImage_Deal(void)" (?LeftImage_Deal@@YAHXZ) 中被引用
+     1>binocular_deal.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall HalconCpp::HObject::~HObject(void)" (__imp_??1HObject@HalconCpp@@QAE@XZ)，该符号在函数 "int __cdecl LeftImage_Deal(void)" (?LeftImage_Deal@@YAHXZ) 中被引用
+     1>binocular_deal.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) void __cdecl HalconCpp::GetImageSize(class HalconCpp::HObject const &,class HalconCpp::HTuple *,class HalconCpp::HTuple *)" (__imp_?GetImageSize@HalconCpp@@YAXABVHObject@1@PAVHTuple@1@1@Z)，该符号在函数 "int __cdecl LeftImage_Deal(void)" (?LeftImage_Deal@@YAHXZ) 中被引用
+     1>binocular_deal.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) void __cdecl HalconCpp::WriteImage(class HalconCpp::HObject const &,class HalconCpp::HTuple const &,class HalconCpp::HTuple const &,class HalconCpp::HTuple const &)" (__imp_?WriteImage@HalconCpp@@YAXABVHObject@1@ABVHTuple@1@11@Z)，该符号在函数 "int __cdecl LeftImage_Deal(void)" (?LeftImage_Deal@@YAHXZ) 中被引用
+     1>binocular_deal.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) void __cdecl HalconCpp::ReadImage(class HalconCpp::HObject *,class HalconCpp::HTuple const &)" (__imp_?ReadImage@HalconCpp@@YAXPAVHObject@1@ABVHTuple@1@@Z)，该符号在函数 "int __cdecl LeftImage_Deal(void)" (?LeftImage_Deal@@YAHXZ) 中被引用
+     1>D:\work\C++\Binocular_Deal\Debug\Binocular_Deal.exe : fatal error LNK1120: 9 个无法解析的外部命令
+     1>已完成生成项目“D:\work\C++\Binocular_Deal\Binocular_Deal\Binocular_Deal.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.54

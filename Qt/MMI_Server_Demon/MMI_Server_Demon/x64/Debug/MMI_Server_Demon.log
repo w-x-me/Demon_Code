@@ -1,0 +1,21 @@
+﻿生成启动时间为 2018/8/13 23:05:30。
+     1>项目“D:\work\Qt\MMI_Server_Demon\MMI_Server_Demon\MMI_Server_Demon.vcxproj”在节点 2 上(Build 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_mmi_server_demon.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_mmi_server_demon.cpp, GeneratedFiles\Release\moc_mmi_server_demon.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_Thread.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_Thread.cpp, GeneratedFiles\Release\moc_Thread.cpp.
+     1>ClCompile:
+         E:\soft\VS2013\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /IE:\install\QT5.6\5.6\msvc2013_64\include /I.\GeneratedFiles\Debug /IE:\install\QT5.6\5.6\msvc2013_64\include\QtCore /IE:\install\QT5.6\5.6\msvc2013_64\include\QtGui /IE:\install\QT5.6\5.6\msvc2013_64\include\QtNetwork /IE:\install\QT5.6\5.6\msvc2013_64\include\QtWidgets /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_NETWORK_LIB /D QT_WIDGETS_LIB /D _AFXDLL /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt mmi_server_demon.cpp
+         mmi_server_demon.cpp
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+       Link:
+         E:\soft\VS2013\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\work\Qt\MMI_Server_Demon\x64\Debug\\MMI_Server_Demon.exe" /NOLOGO /LIBPATH:E:\install\QT5.6\5.6\msvc2013_64\lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Networkd.lib Qt5Widgetsd.lib Qt5Networkd.lib halconcpp.lib halconcpp.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:E:\soft\VS2013\VC\Include\Manifest\dpiaware.manifest /DEBUG /PDB:"D:\work\Qt\MMI_Server_Demon\x64\Debug\MMI_Server_Demon.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\work\Qt\MMI_Server_Demon\x64\Debug\MMI_Server_Demon.lib" /MACHINE:X64 x64\Debug\moc_mmi_server_demon.obj
+         x64\Debug\moc_Thread.obj
+         x64\Debug\qrc_mmi_server_demon.obj
+         x64\Debug\main.obj
+         x64\Debug\mmi_server_demon.obj
+         x64\Debug\Thread.obj
+         MMI_Server_Demon.vcxproj -> D:\work\Qt\MMI_Server_Demon\x64\Debug\MMI_Server_Demon.exe
+     1>已完成生成项目“D:\work\Qt\MMI_Server_Demon\MMI_Server_Demon\MMI_Server_Demon.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:10.30

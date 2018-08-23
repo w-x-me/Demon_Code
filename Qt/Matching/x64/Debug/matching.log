@@ -1,0 +1,19 @@
+﻿生成启动时间为 2018/8/21 11:14:55。
+     1>项目“D:\work\Qt\Matching\matching.vcxproj”在节点 2 上(Build 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_matching.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_matching.cpp, Release\moc_matching.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_qhalconwindow.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_qhalconwindow.cpp, Release\moc_qhalconwindow.cpp.
+     1>ClCompile:
+         E:\soft\VS2013\VC\bin\x86_amd64\CL.exe /c /I. /IE:\install\halcon\include /IE:\install\halcon\include\halconcpp /IE:\install\qt5.6\5.6\msvc2013_64\include /IE:\install\qt5.6\5.6\msvc2013_64\include\QtWidgets /IE:\install\qt5.6\5.6\msvc2013_64\include\QtGui /IE:\install\qt5.6\5.6\msvc2013_64\include\QtANGLE /IE:\install\qt5.6\5.6\msvc2013_64\include\QtCore /Idebug /I"E:\install\qt5.6\5.6\msvc2013_64\mkspecs\win32-msvc2013" /Zi /nologo /W3 /WX- /Od /D _WINDOWS /D UNICODE /D WIN32 /D WIN64 /D WIN32 /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt -w34100 -w34189 -w44996 matching.cpp
+         matching.cpp
+       Link:
+         E:\soft\VS2013\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"debug\\matching.exe" /NOLOGO /LIBPATH:E:\install\qt5.6\5.6\msvc2013_64\lib /LIBPATH:C:\utils\postgresql\pgsql\lib /LIBPATH:C:\utils\my_sql\my_sql\lib /LIBPATH:E:\install\QT5.6\5.6\msvc2013_64\lib /LIBPATH:"E:\install\halcon\lib\x64-win64" E:\install\qt5.6\5.6\msvc2013_64\lib\qtmaind.lib shell32.lib "E:\install\halcon\lib\x64-win64\halconcpp.lib" "E:\install\halcon\lib\x64-win64\halcon.lib" E:\install\qt5.6\5.6\msvc2013_64\lib\Qt5Widgetsd.lib E:\install\qt5.6\5.6\msvc2013_64\lib\Qt5Guid.lib E:\install\qt5.6\5.6\msvc2013_64\lib\Qt5Cored.lib halconcpp.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"debug\matching.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X64 "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" x64\Debug\moc_matching.obj
+         x64\Debug\moc_qhalconwindow.obj
+         x64\Debug\main.obj
+         x64\Debug\matching.obj
+         x64\Debug\qhalconwindow.obj
+         matching.vcxproj -> D:\work\Qt\Matching\debug\matching.exe
+     1>已完成生成项目“D:\work\Qt\Matching\matching.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:03.16

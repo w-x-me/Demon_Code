@@ -1,0 +1,4 @@
+<RCC>
+    <qresource prefix="sever_tcp">
+    </qresource>
+</RCC>

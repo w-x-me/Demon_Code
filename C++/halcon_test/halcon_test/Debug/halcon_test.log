@@ -1,0 +1,24 @@
+﻿生成启动时间为 2018/7/24 8:51:35。
+     1>项目“D:\work\C++\halcon_test\halcon_test\halcon_test.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         E:\soft\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt halcon.cpp
+         halcon.cpp
+       Link:
+         E:\soft\VS2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\work\C++\halcon_test\Debug\halcon_test.exe" /INCREMENTAL /NOLOGO halconcpp.lib halconcpp.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\work\C++\halcon_test\Debug\halcon_test.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\work\C++\halcon_test\Debug\halcon_test.lib" /MACHINE:X86 Debug\halcon.obj
+     1>halcon.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall HalconCpp::HTuple::HTuple(char const *)" (__imp_??0HTuple@HalconCpp@@QAE@PBD@Z)，该符号在函数 _main 中被引用
+     1>halcon.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: virtual __thiscall HalconCpp::HTuple::~HTuple(void)" (__imp_??1HTuple@HalconCpp@@UAE@XZ)，该符号在函数 _main 中被引用
+     1>halcon.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) void __cdecl HalconCpp::ReadImage(class HalconCpp::HObject *,class HalconCpp::HTuple const &)" (__imp_?ReadImage@HalconCpp@@YAXPAVHObject@1@ABVHTuple@1@@Z)，该符号在函数 _main 中被引用
+     1>halcon.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall HalconCpp::HImage::HImage(void)" (__imp_??0HImage@HalconCpp@@QAE@XZ)，该符号在函数 _main 中被引用
+     1>halcon.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: void __thiscall HalconCpp::HImage::GetImageSize(long *,long *)const " (__imp_?GetImageSize@HImage@HalconCpp@@QBEXPAJ0@Z)，该符号在函数 _main 中被引用
+     1>halcon.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: void __thiscall HalconCpp::HImage::DispImage(class HalconCpp::HWindow const &)const " (__imp_?DispImage@HImage@HalconCpp@@QBEXABVHWindow@2@@Z)，该符号在函数 _main 中被引用
+     1>halcon.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall HalconCpp::HImage::~HImage(void)" (__imp_??1HImage@HalconCpp@@QAE@XZ)，该符号在函数 _main 中被引用
+     1>halcon.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall HalconCpp::HWindow::HWindow(long,long,long,long)" (__imp_??0HWindow@HalconCpp@@QAE@JJJJ@Z)，该符号在函数 _main 中被引用
+     1>halcon.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: void __thiscall HalconCpp::HWindow::Click(void)const " (__imp_?Click@HWindow@HalconCpp@@QBEXXZ)，该符号在函数 _main 中被引用
+     1>halcon.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: void __thiscall HalconCpp::HWindow::ClearWindow(void)const " (__imp_?ClearWindow@HWindow@HalconCpp@@QBEXXZ)，该符号在函数 _main 中被引用
+     1>halcon.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: virtual __thiscall HalconCpp::HWindow::~HWindow(void)" (__imp_??1HWindow@HalconCpp@@UAE@XZ)，该符号在函数 _main 中被引用
+     1>D:\work\C++\halcon_test\Debug\halcon_test.exe : fatal error LNK1120: 11 个无法解析的外部命令
+     1>已完成生成项目“D:\work\C++\halcon_test\halcon_test\halcon_test.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:02.83

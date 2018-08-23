@@ -1,0 +1,6 @@
+D:\work\C#\My_log_file\My_log_file\bin\Debug\My_log_file.exe.config
+D:\work\C#\My_log_file\My_log_file\bin\Debug\My_log_file.exe
+D:\work\C#\My_log_file\My_log_file\bin\Debug\My_log_file.pdb
+D:\work\C#\My_log_file\My_log_file\obj\Debug\My_log_file.csprojResolveAssemblyReference.cache
+D:\work\C#\My_log_file\My_log_file\obj\Debug\My_log_file.exe
+D:\work\C#\My_log_file\My_log_file\obj\Debug\My_log_file.pdb

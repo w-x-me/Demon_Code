@@ -1,0 +1,2 @@
+D:\code\C#\delegate_test\delegate_test\bin\Debug\delegate_test.exe.config
+D:\work\C#\delegate_test\delegate_test\bin\Debug\delegate_test.exe.config

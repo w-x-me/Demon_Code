@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>sever_tcpClass</class>
+ <widget class="QMainWindow" name="sever_tcpClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>sever_tcp</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="Server_Start_Bt">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>290</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>开启</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Send_info_Bt">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>290</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>发送</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>220</y>
+      <width>431</width>
+      <height>61</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>10</y>
+      <width>431</width>
+      <height>191</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>200</y>
+      <width>591</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="sever_tcp.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>Server_Start_Bt</sender>
+   <signal>clicked()</signal>
+   <receiver>sever_tcpClass</receiver>
+   <slot>My_Server_Start()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>170</x>
+     <y>340</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>170</x>
+     <y>359</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Send_info_Bt</sender>
+   <signal>clicked()</signal>
+   <receiver>sever_tcpClass</receiver>
+   <slot>My_Send_Info()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>390</x>
+     <y>333</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>393</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>My_Send_Info()</slot>
+  <slot>My_Server_Start()</slot>
+ </slots>
+</ui>

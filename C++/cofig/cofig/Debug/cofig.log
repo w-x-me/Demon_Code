@@ -1,0 +1,16 @@
+﻿生成启动时间为 2018/7/27 15:47:50。
+     1>项目“D:\work\C++\cofig\cofig\cofig.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         E:\soft\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt cofig_rw.cpp
+         cofig_rw.cpp
+     1>e:\soft\vs2013\vc\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+                 e:\soft\vs2013\vc\atlmfc\include\afx.h(33) : 参见“MBCS_Support_Deprecated_In_MFC”的声明
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+       Link:
+         E:\soft\VS2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\work\C++\cofig\Debug\cofig.exe" /INCREMENTAL /NOLOGO halconcpp.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:E:\soft\VS2013\VC\Include\Manifest\dpiaware.manifest /DEBUG /PDB:"D:\work\C++\cofig\Debug\cofig.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\work\C++\cofig\Debug\cofig.lib" /MACHINE:X86 Debug\cofig_rw.obj
+         cofig.vcxproj -> D:\work\C++\cofig\Debug\cofig.exe
+     1>已完成生成项目“D:\work\C++\cofig\cofig\cofig.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:02.77

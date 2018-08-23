@@ -1,0 +1,9 @@
+D:\code\C#\Type_Conversion\Type_Conversion\bin\Debug\Type_Conversion.exe.config
+D:\code\C#\Type_Conversion\Type_Conversion\bin\Debug\Type_Conversion.exe
+D:\code\C#\Type_Conversion\Type_Conversion\bin\Debug\Type_Conversion.pdb
+D:\code\C#\Type_Conversion\Type_Conversion\obj\Debug\Type_Conversion.csprojResolveAssemblyReference.cache
+D:\code\C#\Type_Conversion\Type_Conversion\obj\Debug\Type_Conversion.exe
+D:\code\C#\Type_Conversion\Type_Conversion\obj\Debug\Type_Conversion.pdb
+D:\work\C#\Type_Conversion\Type_Conversion\bin\Debug\Type_Conversion.exe.config
+D:\work\C#\Type_Conversion\Type_Conversion\obj\Debug\Type_Conversion.exe
+D:\work\C#\Type_Conversion\Type_Conversion\obj\Debug\Type_Conversion.pdb

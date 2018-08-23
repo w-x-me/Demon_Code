@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Qt_Halcon_Image_DealClass</class>
+ <widget class="QMainWindow" name="Qt_Halcon_Image_DealClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>678</width>
+    <height>577</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Qt_Halcon_Image_Deal</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="Read_Image">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>460</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>读取图片</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Deal_Image">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>470</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>处理图像</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Image_lb">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>90</y>
+      <width>251</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>显示图像</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Image_lb_2">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>100</y>
+      <width>251</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>显示图像</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>678</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="qt_halcon_image_deal.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>Read_Image</sender>
+   <signal>clicked()</signal>
+   <receiver>Qt_Halcon_Image_DealClass</receiver>
+   <slot>My_read_image()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>141</x>
+     <y>351</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>143</x>
+     <y>324</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Deal_Image</sender>
+   <signal>clicked()</signal>
+   <receiver>Qt_Halcon_Image_DealClass</receiver>
+   <slot>My_deal_image()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>378</x>
+     <y>354</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>382</x>
+     <y>316</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>My_read_image()</slot>
+  <slot>My_deal_image()</slot>
+ </slots>
+</ui>

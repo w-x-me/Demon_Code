@@ -1,0 +1,138 @@
+﻿生成启动时间为 2018/8/21 18:04:19。
+     1>项目“D:\work\Qt\Halcon_Example\Halcon_Example\Halcon_Example.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         E:\soft\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt test.cpp
+         test.cpp
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(28): error C2146: 语法错误: 缺少“;”(在标识符“singleStep”的前面)
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(28): error C4430: 缺少类型说明符 - 假定为 int。注意:  C++ 不支持默认 int
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(28): error C2065: “H_FALSE”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(29): error C2146: 语法错误: 缺少“;”(在标识符“useDisplay”的前面)
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(29): error C4430: 缺少类型说明符 - 假定为 int。注意:  C++ 不支持默认 int
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(29): error C2086: “int HBool”: 重定义
+                 d:\work\qt\halcon_example\halcon_example\test.cpp(28) : 参见“HBool”的声明
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(29): error C2065: “H_TRUE”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(34): error C2065: “HOCRMlp”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(34): error C2146: 语法错误: 缺少“;”(在标识符“hOCRMlp”的前面)
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(34): error C2065: “hOCRMlp”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(35): error C2065: “hOCRMlp”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(35): error C2228: “.ReadOcrClassMlp”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(37): error C2065: “HImage”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(37): error C2146: 语法错误: 缺少“;”(在标识符“hImBottle”的前面)
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(37): error C3861: “hImBottle”:  找不到标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(38): error C2065: “hImBottle”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(38): error C2228: “.Width”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(39): error C2065: “hImBottle”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(39): error C2228: “.Height”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(40): error C2065: “HWindow”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(40): error C2146: 语法错误: 缺少“;”(在标识符“hWindow”的前面)
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(40): error C3861: “hWindow”:  找不到标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(43): error C2065: “HTuple”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(43): error C2146: 语法错误: 缺少“;”(在标识符“OpSys”的前面)
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(43): error C2065: “OpSys”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(44): error C2039: “get_system”: 不是“`global namespace'”的成员
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(44): error C2065: “OpSys”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(44): error C3861: “get_system”:  找不到标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(45): error C2065: “hWindow”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(45): error C2228: “.OpenWindow”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(46): error C2065: “hWindow”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(46): error C2228: “.SetPart”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(47): error C2065: “hWindow”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(47): error C2228: “.SetFont”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(47): error C2065: “OpSys”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(47): error C2228: “.Substring”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(50): error C2065: “hWindow”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(50): error C2228: “.Display”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(50): error C2065: “hImBottle”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(51): error C2065: “hWindow”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(51): error C2228: “.Click”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(54): error C2065: “HRegion”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(54): error C2146: 语法错误: 缺少“;”(在标识符“hRegRawSegmentation”的前面)
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(54): error C2065: “hRegRawSegmentation”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(54): error C2065: “hImBottle”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(55): error C2065: “HRegion”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(55): error C2146: 语法错误: 缺少“;”(在标识符“hRegRemovedNoise”的前面)
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(55): error C2065: “hRegRemovedNoise”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(55): error C2065: “hRegRawSegmentation”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(55): error C2228: “.FillUpShape”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(56): error C2065: “HRegion”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(56): error C2146: 语法错误: 缺少“;”(在标识符“hRegThickStructures”的前面)
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(56): error C2065: “hRegThickStructures”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(56): error C2065: “hRegRemovedNoise”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(56): error C2228: “.OpeningCircle”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(57): error C2065: “HRegion”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(57): error C2146: 语法错误: 缺少“;”(在标识符“hRegSolid”的前面)
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(57): error C2065: “hRegSolid”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(57): error C2065: “hRegThickStructures”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(57): error C2228: “.FillUp”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(58): error C2065: “HRegion”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(58): error C2146: 语法错误: 缺少“;”(在标识符“hRegCut”的前面)
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(58): error C2065: “hRegCut”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(58): error C2065: “hRegSolid”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(58): error C2228: “.OpeningRectangle1”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(59): error C2065: “HRegionArray”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(59): error C2146: 语法错误: 缺少“;”(在标识符“hRegArrConnectedPatterns”的前面)
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(59): error C2065: “hRegArrConnectedPatterns”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(59): error C2065: “hRegCut”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(59): error C2228: “.Connection”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(60): error C2065: “HRegionArray”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(60): error C2146: 语法错误: 缺少“;”(在标识符“hRegArrNumberCandidates”的前面)
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(60): error C2065: “hRegArrNumberCandidates”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(61): error C2065: “hRegArrConnectedPatterns”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(61): error C2065: “hRegThickStructures”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(62): error C2065: “HRegionArray”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(62): error C2146: 语法错误: 缺少“;”(在标识符“hRegArrNumbers”的前面)
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(62): error C2065: “hRegArrNumbers”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(63): error C2065: “hRegArrNumberCandidates”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(63): error C2228: “.SelectShape”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(64): error C2065: “HRegionArray”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(64): error C2146: 语法错误: 缺少“;”(在标识符“hRegArrFinalNumbers”的前面)
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(64): error C2065: “hRegArrFinalNumbers”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(65): error C2065: “hRegArrNumbers”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(65): error C2228: “.SortRegion”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(69): error C2065: “hWindow”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(69): error C2228: “.SetColor”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(70): error C2065: “hWindow”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(70): error C2228: “.Display”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(70): error C2065: “hRegThickStructures”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(71): error C2065: “hWindow”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(71): error C2228: “.Click”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(72): error C2065: “hWindow”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(72): error C2228: “.SetDraw”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(73): error C2065: “hWindow”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(73): error C2228: “.SetLineWidth”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(74): error C2065: “hWindow”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(74): error C2228: “.Display”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(74): error C2065: “hImBottle”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(75): error C2065: “hWindow”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(75): error C2228: “.Display”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(75): error C2065: “hRegThickStructures”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(76): error C2065: “hWindow”: 未声明的标识符
+     1>d:\work\qt\halcon_example\halcon_example\test.cpp(76): fatal error C1003: 错误计数超过 100；正在停止编译
+     1>已完成生成项目“D:\work\Qt\Halcon_Example\Halcon_Example\Halcon_Example.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:02.56

@@ -1,0 +1,36 @@
+D:\code\C#\test_cuvre\test_cuvre\bin\Debug\test_cuvre.exe.config
+D:\code\C#\test_cuvre\test_cuvre\bin\Debug\test_cuvre.exe
+D:\code\C#\test_cuvre\test_cuvre\bin\Debug\test_cuvre.pdb
+D:\code\C#\test_cuvre\test_cuvre\obj\Debug\test_cuvre.csprojResolveAssemblyReference.cache
+D:\code\C#\test_cuvre\test_cuvre\obj\Debug\test_cuvre.Form1.resources
+D:\code\C#\test_cuvre\test_cuvre\obj\Debug\test_cuvre.Properties.Resources.resources
+D:\code\C#\test_cuvre\test_cuvre\obj\Debug\test_cuvre.csproj.GenerateResource.Cache
+D:\code\C#\test_cuvre\test_cuvre\obj\Debug\test_cuvre.exe
+D:\code\C#\test_cuvre\test_cuvre\obj\Debug\test_cuvre.pdb
+D:\work\C#\test_cuvre\test_cuvre\bin\Debug\test_cuvre.exe.config
+D:\work\C#\test_cuvre\test_cuvre\obj\Debug\test_cuvre.exe
+D:\work\C#\test_cuvre\test_cuvre\obj\Debug\test_cuvre.pdb
+D:\work\C#\test_cuvre\test_cuvre\bin\Debug\test_cuvre.exe
+D:\work\C#\test_cuvre\test_cuvre\bin\Debug\test_cuvre.pdb
+D:\work\C#\test_cuvre\test_cuvre\obj\Debug\test_cuvre.csprojResolveAssemblyReference.cache
+D:\work\C#\test_cuvre\test_cuvre\obj\Debug\test_cuvre.Form1.resources
+D:\work\C#\test_cuvre\test_cuvre\obj\Debug\test_cuvre.Properties.Resources.resources
+D:\work\C#\test_cuvre\test_cuvre\obj\Debug\test_cuvre.csproj.GenerateResource.Cache
+D:\work\C#\test_cuvre - 副本\test_cuvre\bin\Debug\test_cuvre.exe.config
+D:\work\C#\test_cuvre - 副本\test_cuvre\obj\Debug\test_cuvre.exe
+D:\work\C#\test_cuvre - 副本\test_cuvre\obj\Debug\test_cuvre.pdb
+D:\work\C#\test_cuvre - 副本\test_cuvre\bin\Debug\test_cuvre.exe
+D:\work\C#\test_cuvre - 副本\test_cuvre\bin\Debug\test_cuvre.pdb
+D:\work\C#\test_cuvre - 副本\test_cuvre\obj\Debug\test_cuvre.csprojResolveAssemblyReference.cache
+D:\work\C#\test_cuvre - 副本\test_cuvre\obj\Debug\test_cuvre.Form1.resources
+D:\work\C#\test_cuvre - 副本\test_cuvre\obj\Debug\test_cuvre.Properties.Resources.resources
+D:\work\C#\test_cuvre - 副本\test_cuvre\obj\Debug\test_cuvre.csproj.GenerateResource.Cache
+D:\work\C#\Battery_Pressure_cuvre\test_cuvre\bin\Debug\test_cuvre.exe.config
+D:\work\C#\Battery_Pressure_cuvre\test_cuvre\obj\Debug\test_cuvre.exe
+D:\work\C#\Battery_Pressure_cuvre\test_cuvre\obj\Debug\test_cuvre.pdb
+D:\work\C#\Battery_Pressure_cuvre\test_cuvre\bin\Debug\test_cuvre.exe
+D:\work\C#\Battery_Pressure_cuvre\test_cuvre\bin\Debug\test_cuvre.pdb
+D:\work\C#\Battery_Pressure_cuvre\test_cuvre\obj\Debug\test_cuvre.Form1.resources
+D:\work\C#\Battery_Pressure_cuvre\test_cuvre\obj\Debug\test_cuvre.Properties.Resources.resources
+D:\work\C#\Battery_Pressure_cuvre\test_cuvre\obj\Debug\test_cuvre.csproj.GenerateResource.Cache
+D:\work\C#\Battery_Pressure_cuvre\test_cuvre\obj\Debug\test_cuvre.csprojResolveAssemblyReference.cache

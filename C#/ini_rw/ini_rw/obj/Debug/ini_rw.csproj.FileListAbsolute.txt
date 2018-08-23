@@ -1,0 +1,6 @@
+D:\work\C#\ini_rw\ini_rw\bin\Debug\ini_rw.exe.config
+D:\work\C#\ini_rw\ini_rw\bin\Debug\ini_rw.exe
+D:\work\C#\ini_rw\ini_rw\bin\Debug\ini_rw.pdb
+D:\work\C#\ini_rw\ini_rw\obj\Debug\ini_rw.csprojResolveAssemblyReference.cache
+D:\work\C#\ini_rw\ini_rw\obj\Debug\ini_rw.exe
+D:\work\C#\ini_rw\ini_rw\obj\Debug\ini_rw.pdb
