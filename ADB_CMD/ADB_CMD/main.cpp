@@ -8,7 +8,7 @@
 #include <afx.h>
 #include"Image_deal.h"
 using namespace std;
-//C++µ÷ÓÃADBº¯Êý
+//C++è°ƒç”¨ADBå‡½æ•°
 bool ExecuteADBShellCmd(char* cmdline, char* response)
 {
 	int ShellRetryCT = 0;
@@ -34,9 +34,9 @@ ShellRetry:
 	sa.lpSecurityDescriptor = NULL;
 	sa.bInheritHandle = TRUE;
 
-	if (!CreatePipe(&hRead, &hWrite, &sa, 0))   //???¡§????????
+	if (!CreatePipe(&hRead, &hWrite, &sa, 0))   //???Â¨????????
 	{
-		//cout << "´ò¿ªÎÄ¼þÊ§°Ü" << endl;
+		//cout << "æ‰“å¼€æ–‡ä»¶å¤±è´¥" << endl;
 		return false;
 	}
 
@@ -96,7 +96,7 @@ ShellRetry:
 
 	ShellRetryCT++;
 
-	//ÕâÀï´¦ÀíÏÂdevice not foundµÄÇé¿ö£¬Èç¹û³öÏÖÔò×ö¼¸´Îretry device not found
+	//è¿™é‡Œå¤„ç†ä¸‹device not foundçš„æƒ…å†µï¼Œå¦‚æžœå‡ºçŽ°åˆ™åšå‡ æ¬¡retry device not found
 	if (strstr(response, "device not found") != NULL)
 	{
 		if (ShellRetryCT <= 5)
@@ -109,7 +109,171 @@ ShellRetry:
 
 	return true;
 }
-int take_image_ffc()//Ç°ÖÃÉãÏñÍ·
+
+//æ–°å¢žæ–¹æ³•ï¼Œä¿è¯adb.exeè¿›ç¨‹æ¯æ¬¡è°ƒç”¨åŽè¢«æ€æ­»ï¼ŒåŒæ—¶ä¿è¯å®Œå…¨èŽ·å–adbæŒ‡ä»¤æ‰§è¡ŒåŽï¼ŒæŠŠè¿”å›žå€¼èŽ·å–å…¨
+#include<Tlhelp32.h>
+void KillProcessFromName(CString strProcessName)
+{
+	try
+	{
+		HANDLE hSnapShot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
+		PROCESSENTRY32 pe;
+		pe.dwSize = sizeof(PROCESSENTRY32);
+		if (!Process32First(hSnapShot, &pe))
+			return;
+		strProcessName.MakeLower();
+		while (Process32Next(hSnapShot, &pe))
+		{
+			CString scTemp = pe.szExeFile;
+			scTemp.MakeLower();
+			if (!scTemp.Compare(strProcessName))
+			{
+				DWORD dwProcessID = pe.th32ProcessID;
+				HANDLE hProcess = ::OpenProcess(PROCESS_TERMINATE, FALSE, dwProcessID);
+				::TerminateProcess(hProcess, 0);
+				CloseHandle(hProcess);
+			}
+			scTemp.ReleaseBuffer();
+		}
+		strProcessName.ReleaseBuffer();
+	}
+	catch (...)
+	{
+
+	}
+};
+
+bool ExecuteADBCmdWithSerial(char* cmdline,  char* response)
+{
+	int RetryCT = 0;
+Retry:
+
+	//char szADBCmdLine[1024] = { 0 };
+	char szTmp[4096] = { 0 };
+	char szBuffer[4096] = { 0 };
+	DWORD dwRet = 0;
+	DWORD dwBytesRead = 0;
+	DWORD dwMilliseconds = 15000;//HRH 30000->15000
+	bool bRet = false;
+	int totalRetryTime = 3;
+	int retryCount = 0;
+	CString strFilePath;
+
+	char appPath[267];
+	strFilePath.Format(".\\adb\\adb.exe %s", cmdline);
+	strcpy(appPath, strFilePath);
+	
+	SECURITY_ATTRIBUTES sa;
+	HANDLE hRead = NULL, hWrite = NULL;
+
+	sa.nLength = sizeof(SECURITY_ATTRIBUTES);
+	sa.lpSecurityDescriptor = NULL;
+	sa.bInheritHandle = TRUE;
+
+	if (!CreatePipe(&hRead, &hWrite, &sa, 0))
+		return false;
+
+	STARTUPINFO si;
+	PROCESS_INFORMATION pi;
+
+	ZeroMemory(&si, sizeof(STARTUPINFO));
+	si.cb = sizeof(STARTUPINFO);
+	GetStartupInfo(&si);
+	si.hStdError = hWrite;
+	si.hStdOutput = hWrite;
+	si.wShowWindow = SW_HIDE;
+	si.dwFlags = STARTF_USESHOWWINDOW | STARTF_USESTDHANDLES;
+
+	for (; retryCount <= totalRetryTime; retryCount++)
+	{
+		if (!CreateProcess(NULL, appPath, NULL, NULL, TRUE, NULL, NULL, NULL, &si, &pi))
+			break;
+		dwRet = WaitForSingleObject(pi.hProcess, dwMilliseconds);
+		if (dwRet == WAIT_TIMEOUT || dwRet == WAIT_FAILED)
+		{
+			TerminateProcess(pi.hProcess, 0);
+			Sleep(200);
+			continue;   //HRH,å¼ºåˆ¶ç»“æŸåŽé‡æ–°åˆ›å»º
+		}
+
+		if (true)
+		{
+			CloseHandle(hWrite);
+			hWrite = NULL;
+			bool bReadOk = false;
+			for (int i = 0; i < 5; i++)
+			{
+				memset(szBuffer, 0, sizeof(szBuffer));
+				ReadFile(hRead, szBuffer, sizeof(szBuffer)-1, &dwBytesRead, NULL);
+				if (strstr(szBuffer, "daemon not running") != NULL)
+				{
+					Sleep(100);
+					continue;
+				}
+				if (strstr(szBuffer, "device not found") != NULL)
+				{
+					Sleep(100);
+					continue;
+				}
+				CString str = szBuffer;
+				if (str.IsEmpty())
+				{
+					Sleep(100);
+					continue;
+				}
+				bReadOk = true;
+				break;
+			}
+			if (!bReadOk)
+			{
+				TerminateProcess(pi.hProcess, 0);
+				Sleep(200);
+				continue;
+			}
+			else
+			{
+				strncpy(response, szBuffer, sizeof(szBuffer)-1);
+				bRet = true;
+				CloseHandle(hRead);
+				hRead = NULL;
+				break;
+			}
+		}
+		else
+			bRet = true;
+
+		break;
+	}
+
+	if (hRead)
+	{
+		CloseHandle(hRead);
+		hRead = NULL;
+	}
+	if (hWrite)
+	{
+		CloseHandle(hWrite);
+		hWrite = NULL;
+	}
+
+	RetryCT++;
+	if (strstr(response, "device not found") != NULL)
+	{
+		if (RetryCT <= 5)
+		{
+			Sleep(2000);
+			goto Retry;
+		}
+	}
+	KillProcessFromName(".\\adb\\adb.exe");//æ¯æ¬¡æ‰§è¡Œå®ŒåŽå°†adb.exeæ€æ­»ã€‚
+	KillProcessFromName("conhost.exe");
+	return bRet;
+}
+/*--------------------------------------------------------------------------------------------*/
+
+
+
+int take_image_ffc()//å‰ç½®æ‘„åƒå¤´
 {
 	image_deal halcon_deal;
 	char cmdline[50];
@@ -118,7 +282,7 @@ int take_image_ffc()//Ç°ÖÃÉãÏñÍ·
 	bool ok = ExecuteADBShellCmd(cmdline, response);
 	if (response[12] != 'P' || ok == false)
 	{
-		cout << "¹Ø±ÕÆÁÄ»Ö´ÐÐÊ§°Ü" << endl;
+		cout << "å…³é—­å±å¹•æ‰§è¡Œå¤±è´¥" << endl;
 		return -1;
 	}
 
@@ -126,15 +290,15 @@ int take_image_ffc()//Ç°ÖÃÉãÏñÍ·
 	ok = ExecuteADBShellCmd(cmdline, response);
 	if (ok == false)
 	{
-		cout << "É¾³ýÕÕÆ¬Ê§°Ü" << endl;
+		cout << "åˆ é™¤ç…§ç‰‡å¤±è´¥" << endl;
 		return -1;
 	}
 
-	strcpy(cmdline, "shell dtest camera_FFC_f_capture 30 90");//FÇ°ÖÃÉãÏñÍ·
+	strcpy(cmdline, "shell dtest camera_FFC_f_capture 30 90");//Få‰ç½®æ‘„åƒå¤´
 	ok = ExecuteADBShellCmd(cmdline, response);
 	if (ok == false)
 	{
-		cout << "»ñÈ¡Í¼Æ¬Ê§°Ü" << endl;
+		cout << "èŽ·å–å›¾ç‰‡å¤±è´¥" << endl;
 		return -1;
 	}
 
@@ -142,7 +306,7 @@ int take_image_ffc()//Ç°ÖÃÉãÏñÍ·
 	ok = ExecuteADBShellCmd(cmdline, response);
 	if (ok == false)
 	{
-		cout << "È¡³öÍ¼Æ¬Ê§°Ü" << endl;
+		cout << "å–å‡ºå›¾ç‰‡å¤±è´¥" << endl;
 		return -1;
 	}
 
@@ -168,7 +332,7 @@ int take_image_rf()
 	bool ok = ExecuteADBShellCmd(cmdline, response);
 	if (response[12] != 'P' || ok == false)
 	{
-		cout << "¹Ø±ÕÆÁÄ»Ö´ÐÐÊ§°Ü" << endl;
+		cout << "å…³é—­å±å¹•æ‰§è¡Œå¤±è´¥" << endl;
 		return -1;
 	}
 
@@ -176,15 +340,15 @@ int take_image_rf()
 	ok = ExecuteADBShellCmd(cmdline, response);
 	if (ok == false)
 	{
-		cout << "É¾³ýÕÕÆ¬Ê§°Ü" << endl;
+		cout << "åˆ é™¤ç…§ç‰‡å¤±è´¥" << endl;
 		return -1;
 	}
 
-	strcpy(cmdline, "shell dtest camera_RFC_f_capture 30 90");//RºóÖÃÉãÏñÍ·
+	strcpy(cmdline, "shell dtest camera_RFC_f_capture 30 90");//RåŽç½®æ‘„åƒå¤´
 	ok = ExecuteADBShellCmd(cmdline, response);
 	if (ok == false)
 	{
-		cout << "»ñÈ¡Í¼Æ¬Ê§°Ü" << endl;
+		cout << "èŽ·å–å›¾ç‰‡å¤±è´¥" << endl;
 		return -1;
 	}
 
@@ -192,7 +356,7 @@ int take_image_rf()
 	ok = ExecuteADBShellCmd(cmdline, response);
 	if (ok == false)
 	{
-		cout << "È¡³öÍ¼Æ¬Ê§°Ü" << endl;
+		cout << "å–å‡ºå›¾ç‰‡å¤±è´¥" << endl;
 		return -1;
 	}
 
