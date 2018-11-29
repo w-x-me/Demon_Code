@@ -1,0 +1,46 @@
+﻿生成启动时间为 2018/11/27 15:04:12。
+     1>项目“D:\work\Demon_Set\Camera_Test\Camera_Test.vcxproj”在节点 2 上(Build 个目标)。
+     1>CustomBuild:
+         Moc'ing main_ui.h...
+         Uic'ing main_ui.ui...
+         Rcc'ing main_ui.qrc...
+     1>RCC : warning : No resources in 'D:\work\Demon_Set\Camera_Test\main_ui.qrc'.
+         
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_main_ui.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_main_ui.cpp, GeneratedFiles\Release\moc_main_ui.cpp.
+       ClCompile:
+         E:\soft\VS2013\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /IE:\install\QT5.6\5.6\msvc2013_64\include /I.\GeneratedFiles\Debug /IE:\install\QT5.6\5.6\msvc2013_64\include\QtCore /IE:\install\QT5.6\5.6\msvc2013_64\include\QtGui /IE:\install\QT5.6\5.6\msvc2013_64\include\QtWidgets /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /D _MBCS /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt "camera-detection.cpp" GeneratedFiles\Debug\moc_main_ui.cpp main.cpp main_ui.cpp "sfr-data-proces.cpp" "sfr-method.cpp"
+         camera-detection.cpp
+     1>d:\work\demon_set\camera_test\sfr.h(10): warning C4273: “strerror”: dll 链接不一致
+                 E:\soft\VS2013\VC\include\string.h(168) : 参见“strerror”的前一个定义
+         moc_main_ui.cpp
+     1>d:\work\demon_set\camera_test\sfr.h(10): warning C4273: “strerror”: dll 链接不一致
+                 E:\soft\VS2013\VC\include\string.h(168) : 参见“strerror”的前一个定义
+         main.cpp
+     1>d:\work\demon_set\camera_test\sfr.h(10): warning C4273: “strerror”: dll 链接不一致
+                 E:\soft\VS2013\VC\include\string.h(168) : 参见“strerror”的前一个定义
+         main_ui.cpp
+     1>d:\work\demon_set\camera_test\sfr.h(10): warning C4273: “strerror”: dll 链接不一致
+                 E:\soft\VS2013\VC\include\string.h(168) : 参见“strerror”的前一个定义
+         sfr-data-proces.cpp
+     1>d:\work\demon_set\camera_test\sfr.h(10): warning C4273: “strerror”: dll 链接不一致
+                 E:\soft\VS2013\VC\include\string.h(168) : 参见“strerror”的前一个定义
+         sfr-method.cpp
+     1>d:\work\demon_set\camera_test\sfr.h(10): warning C4273: “strerror”: dll 链接不一致
+                 E:\soft\VS2013\VC\include\string.h(168) : 参见“strerror”的前一个定义
+         正在生成代码...
+         E:\soft\VS2013\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /IE:\install\QT5.6\5.6\msvc2013_64\include /I.\GeneratedFiles\Debug /IE:\install\QT5.6\5.6\msvc2013_64\include\QtCore /IE:\install\QT5.6\5.6\msvc2013_64\include\QtGui /IE:\install\QT5.6\5.6\msvc2013_64\include\QtWidgets /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /D _MBCS /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt GeneratedFiles\qrc_main_ui.cpp
+         qrc_main_ui.cpp
+       Link:
+         E:\soft\VS2013\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\work\Demon_Set\x64\Debug\\Camera_Test.exe" /NOLOGO /LIBPATH:E:\install\QT5.6\5.6\msvc2013_64\lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Widgetsd.lib halconcpp.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\work\Demon_Set\x64\Debug\Camera_Test.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\work\Demon_Set\x64\Debug\Camera_Test.lib" /MACHINE:X64 "x64\Debug\camera-detection.obj"
+         x64\Debug\moc_main_ui.obj
+         x64\Debug\qrc_main_ui.obj
+         x64\Debug\main.obj
+         x64\Debug\main_ui.obj
+         "x64\Debug\sfr-data-proces.obj"
+         "x64\Debug\sfr-method.obj"
+         Camera_Test.vcxproj -> D:\work\Demon_Set\x64\Debug\Camera_Test.exe
+     1>已完成生成项目“D:\work\Demon_Set\Camera_Test\Camera_Test.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:14.78
